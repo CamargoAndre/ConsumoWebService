@@ -37,9 +37,10 @@ export default function App() {
 
       Keyboard.dismiss()
 
-      obterPrevisao(latitude, longitude)
     });
+
   };
+  
 
 
   const obterPrevisao = (latitude, longitude) => {
@@ -70,6 +71,10 @@ export default function App() {
         <Button
           title="Ok"
           onPress={obtemPrevisoes}
+        />
+        <Button
+        title=""
+          onPress={obterPrevisao(latitude, longitude)}
         />
       </View>
       <View style={estilos.previsao}>
